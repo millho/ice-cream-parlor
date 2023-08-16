@@ -14,16 +14,127 @@
     <title>Ice Cream Parlor</title>
 </head>
 
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
 <body data-bs-theme="dark">
 
     <main class="container-fluid">
         <section class="row">
-            <div class="col-12 col-md-6">
 
-            </div>
-            <div class="col-12 col-md-6">
+            <!-- SECTION cart -->
+            <div class="col-12 col-md-5 p-1 order-2 order-md-1">
+                <div class="row p-3">
 
+                    <!-- NOTE ice cream cart -->
+                    <div id="iceCreamCart" class="col-12 card">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                name
+                            </span>
+                            <span>
+                                price
+                            </span>
+                            <span>
+                                quantity
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- NOTE toppings cart -->
+                    <div id="toppingsCart" class="col-12 card">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                name
+                            </span>
+                            <span>
+                                price
+                            </span>
+                            <span>
+                                quantity
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- NOTE cone cart -->
+                    <div id="coneCart" class="col-12 card">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                name
+                            </span>
+                            <span>
+                                price
+                            </span>
+                            <span>
+                                quantity
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- NOTE total -->
+                    <div id="total" class="col-12 card">
+                        total
+                    </div>
+                </div>
             </div>
+            <!-- SECTION options -->
+            <div class="col-12 col-md-7 p-1 order- 1 order-md-2">
+
+                <!-- NOTE ice cream -->
+                <div class="row p-3">
+                    <button onclick="orderIceCream('vanilla')" class="col-4 card">
+                        Vanilla
+                    </button>
+                    <button onclick="orderIceCream('cookie dough')" class="col-4 card">
+                        Cookie Dough
+                    </button>
+                    <button onclick="orderIceCream('strawberry')" class="col-4 card">
+                        Strawberry
+                    </button>
+                </div>
+
+                <!-- NOTE toppings -->
+                <div class="row p-3">
+                    <button onclick="orderToppings('sprinkles')" class="col-4 card">
+                        sprinkles
+                    </button>
+                    <button onclick="orderToppings('chocolate chips')" class="col-4 card">
+                        chocolate chips
+                    </button>
+                    <button onclick="orderToppings('cookie chunks')" class="col-4 card">
+                        cookie chunks
+                    </button>
+                </div>
+
+                <!-- NOTE cones -->
+                <div class="row p-3">
+                    <button onclick="orderCone('regular')" class="col-4 card">
+                        regular
+                    </button>
+                    <button onclick="orderCone('waffle')" class="col-4 card">
+                        waffle
+                    </button>
+                    <button onclick="orderCone('bowl')" class="col-4 card">
+                        bowl
+                    </button>
+                </div>
+            </div>
+
         </section>
     </main>
 

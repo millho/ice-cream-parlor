@@ -1,6 +1,5 @@
 /* utilities */
 body {
-    color: whitesmoke;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
@@ -10,4 +9,10 @@ h2,
 h3,
 h4 {
     margin: 0;
+}
+
+/* custom */
+.card {
+    background-color: whitesmoke;
+    color: black;
 }
