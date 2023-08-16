@@ -1,0 +1,13 @@
+/* utilities */
+body {
+    color: whitesmoke;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
