@@ -90,6 +90,19 @@ function orderCone(type) {
     drawConeCart()
 }
 
+function checkOut() {
+    if (window.confirm('Are you ready to check out?')) {
+
+        iceCream.forEach(flavor => flavor.quantity = 0)
+        toppings.forEach(topping => topping.quantity = 0)
+        cones.forEach(type => type.quantity = 0)
+
+        drawIceCreamCart()
+        drawToppingsCart()
+        drawConeCart()
+    }
+}
+
 function drawIceCreamCart() {
     let template = ''
     iceCream.forEach(flavor => {

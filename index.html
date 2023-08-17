@@ -38,65 +38,87 @@
         <section class="row">
 
             <!-- SECTION cart -->
-            <div class="col-12 col-md-5 p-1 order-2 order-md-1">
-                <div class="row p-3">
+            <div class="col-12 col-md-6 p-3 order-2 order-md-1">
 
-                    <!-- NOTE ice cream cart -->
+                <!-- NOTE ice cream cart -->
+                <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Flavors Selected</h3>
+                    </div>
                     <div id="iceCreamCart" class="col-12 card">
                         <div class="d-flex justify-content-between">
                             <span>
-                                name
+
                             </span>
                             <span>
-                                price
+
                             </span>
                             <span>
-                                quantity
+
                             </span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- NOTE toppings cart -->
+                <!-- NOTE toppings cart -->
+                <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Toppings Selected</h3>
+                    </div>
                     <div id="toppingsCart" class="col-12 card">
                         <div class="d-flex justify-content-between">
                             <span>
-                                name
+
                             </span>
                             <span>
-                                price
+
                             </span>
                             <span>
-                                quantity
+
                             </span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- NOTE cone cart -->
+                <!-- NOTE cone cart -->
+                <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Cones Selected</h3>
+                    </div>
                     <div id="coneCart" class="col-12 card">
                         <div class="d-flex justify-content-between">
                             <span>
-                                name
+
                             </span>
                             <span>
-                                price
+
                             </span>
                             <span>
-                                quantity
+
                             </span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- NOTE total -->
+                <!-- NOTE total -->
+                <div class="row p-3 justify-content-end">
+                    <div class="col-12">
+                        <h3>Total</h3>
+                    </div>
                     <div id="total" class="col-12 card">
-                        total
+
                     </div>
                 </div>
             </div>
+
             <!-- SECTION options -->
-            <div class="col-12 col-md-7 p-1 order- 1 order-md-2">
+            <div class="col-12 col-md-6 p-3 order- 1 order-md-2">
 
                 <!-- NOTE ice cream -->
                 <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Flavors</h3>
+                    </div>
                     <button onclick="orderIceCream('vanilla')" class="col-4 card">
                         Vanilla
                     </button>
@@ -110,6 +132,9 @@
 
                 <!-- NOTE toppings -->
                 <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Toppings</h3>
+                    </div>
                     <button onclick="orderToppings('sprinkles')" class="col-4 card">
                         sprinkles
                     </button>
@@ -123,6 +148,9 @@
 
                 <!-- NOTE cones -->
                 <div class="row p-3">
+                    <div class="col-12">
+                        <h3>Cones</h3>
+                    </div>
                     <button onclick="orderCone('regular')" class="col-4 card">
                         regular
                     </button>
@@ -132,6 +160,13 @@
                     <button onclick="orderCone('bowl')" class="col-4 card">
                         bowl
                     </button>
+                </div>
+
+                <div class="row p-3">
+                    <div class="col-12">
+                        <h3>All Ready?</h3>
+                    </div>
+                    <button class="btn card bg-danger" onclick="checkOut()">CHECK OUT</button>
                 </div>
             </div>
 
