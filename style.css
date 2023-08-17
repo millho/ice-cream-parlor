@@ -11,7 +11,15 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: normal;
+}
 
+.total-card {
+    background-color: whitesmoke;
+    color: black;
+    min-height: 12vh;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: normal;
 }
 
 .img {
